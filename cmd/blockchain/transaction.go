@@ -45,7 +45,7 @@ func (transaction *Transaction) NewUTXO(addressSend string, addresRcv string, va
 func (transaction *Transaction) Reward(validator string) {
 	var outrew *Output = new(Output)
 	outrew.Value = 500
-	outrew.ScriptPubKey = "validator"
+	outrew.ScriptPubKey = validator
 	transaction.Outputs = append(transaction.Outputs, *outrew)
 }
 

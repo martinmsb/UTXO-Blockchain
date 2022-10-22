@@ -8,7 +8,7 @@ import (
 
 func main() {
 	var blockchain *Blockchain = new(Blockchain)
-	blockchain.InitGenesisBlock("myadress0000000")
+	blockchain.InitGenesisBlock("adressvalidator")
 	fmt.Println(blockchain.ToString())
 	fmt.Print(blockchain.Blocks[0].ToString())
 	//fmt.Println(transaction.ToString())
