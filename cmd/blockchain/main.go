@@ -3,11 +3,11 @@ package main
 import (
 	"fmt"
 
-	. "github.com/martinmsb/UTX0-Blockchain/cmd/blockchain"
+	"github.com/martinmsb/UTX0-Blockchain/internal/blockchain"
 )
 
 func main() {
-	var blockchain *Blockchain = new(Blockchain)
+	var blockchain *blockchain.Blockchain = new(blockchain.Blockchain)
 	blockchain.InitGenesisBlock("adressvalidator")
 	fmt.Println(blockchain.ToString())
 	fmt.Print(blockchain.Blocks[0].ToString())
